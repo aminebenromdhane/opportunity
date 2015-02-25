@@ -46,6 +46,7 @@ vh.routes.add new Route("/api/meetup/list", new ListMeetupAction("GET"))
 #vh.routes.add new Route("/api/answer/get/:id", new GetAnswerAction("GET"))
 #vh.routes.add new Route("/api/answer/list", new ListAnswerAction("GET"))
 
+vh.routes.add new Route(null, new FileServer("src/www"))
 
 var fac = new HttpFactory.and_libevent
 fac.config.virtual_hosts.add vh

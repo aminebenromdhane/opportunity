@@ -67,7 +67,7 @@ class Meetup
 		end
 	end
 
-	fun delete:Bool do
+	redef fun delete:Bool do
 		if id == "" then
 			return false
 		end
